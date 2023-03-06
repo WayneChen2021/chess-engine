@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include/json/include/nlohmann",
+                "/usr/include/json/include",
+                "/usr/local/include/tensorflow/bazel-bin/tensorflow/include",
+                "/usr/local/include/libtorch/include",
+                "/usr/local/include/libtorch/include/torch/csrc/api/include",
+                "/usr/include/python3.10"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

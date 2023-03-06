@@ -1,0 +1,53 @@
+{
+  "model": {
+    "tf": true,
+    "policy": {
+      "name": "policy",
+      "args": {}
+    },
+    "value": {
+      "name": "value",
+      "args": {}
+    },
+    "main": {
+      "name": "main",
+      "args": {}
+    }
+  },
+  "training_params": {
+    "cpp": {
+      "curr_iter_num": 0,
+      "batch_size": 32,
+      "training_iters": 10000,
+      "game_len_estimate": 75,
+      "retained_games": 5000
+    },
+    "py": {
+      "optimizer": {
+        "name": "tf.keras.optimizers.SGD",
+        "args": {
+          "learning_rate": 0.01,
+          "momentum": 0.0
+        }
+      },
+      "epochs": 20,
+      "l2_weight": 0.01
+    }
+  },
+  "pit_params": {
+    "game_count": 100,
+    "update_thresh": 0.55,
+    "thread_count": 8
+  },
+  "mcst_params": {
+    "temp_threshold": 30,
+    "zero_temp": 0.00001,
+    "cpuct": 1,
+    "games_per_iter": 1024,
+    "searches_per_state": 512,
+    "legal_moves_estimate": 35,
+    "noise_alpha": 0.3,
+    "noise_weight": 0.25,
+    "thread_count": 8
+  }
+}
